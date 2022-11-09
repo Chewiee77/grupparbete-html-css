@@ -10,7 +10,7 @@
   background-color: red;
 } 
 Testing linked ok!!*/
-
+/*  -------------------- HEADER -------------------------------  */
 .main-header {
   width: 100%;
   position: sticky;
@@ -30,6 +30,10 @@ Testing linked ok!!*/
   gap: 1rem;
   list-style: none;
   margin-top: 1rem;
+}
+
+.main-nav-item {
+  min-width: 100px;
 }
 
 .main-header-customer {
@@ -92,6 +96,7 @@ Testing linked ok!!*/
   border-radius: 8px;
   padding: 1rem;
   display: flex;
+  justify-content: center;
   margin: auto;
 }
 
@@ -194,6 +199,80 @@ Testing linked ok!!*/
   transition: opacity 200ms linear;
 }
 
+/* ---------------------FOOTER----------------------------------- */
+.input-container {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.input-container input {
+  padding-left: 0.2rem;
+}
+
+.mail-input::placeholder {
+  color: rgb(212, 208, 208);
+}
+.mail-input:focus {
+  box-shadow: inset 0px 0px 1px 1px #1f568f;
+}
+
+.sub-button {
+  background-color: #aa1b1b;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.footer-logos-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.socials-logo {
+  display: flex;
+  filter: invert(100%) sepia(0%) saturate(100000%) hue-rotate(0deg)
+    brightness(10000%) contrast(200%);
+  height: 30px;
+}
+
+.socials-container {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  gap: 1rem;
+}
+
+.socials-container > h4 {
+  color: white;
+}
+
+.footer-links-container {
+  margin: 1rem;
+  display: none;
+}
+
+.footer-links-items {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 1rem;
+}
+
+.footer-links-items a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-container {
+  background-color: #141315;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: auto;
+}
+
 @media (min-width: 700px) {
   .main-nav-container {
     display: block;
@@ -207,6 +286,10 @@ Testing linked ok!!*/
   .mobile-nav {
     visibility: hidden;
   }
+  .footer-links-container {
+    display: block;
+  }
+  .footer-container {
+    justify-content: space-between;
+  }
 }
-
-/* ---------------------FOOTER----------------------------------- */
