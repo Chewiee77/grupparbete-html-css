@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Franklin Gothic Medium";
+  font-family: gothic a1;
 }
 
 /* body {
