@@ -9,7 +9,7 @@
   background-color: red;
 } 
 Testing linked ok!!*/
-
+/*  -------------------- HEADER -------------------------------  */
 .main-header {
   width: 100%;
   position: sticky;
@@ -209,3 +209,32 @@ Testing linked ok!!*/
 }
 
 /* ---------------------FOOTER----------------------------------- */
+.footer-logos-container {
+  display: flex;
+  /* margin: auto; */
+}
+
+.socials-logo {
+  height: 10px;
+  width: 10px;
+  margin: auto;
+}
+
+.socials-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container {
+  display: flex;
+}
+
+.footer-container {
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 10rem;
+}
