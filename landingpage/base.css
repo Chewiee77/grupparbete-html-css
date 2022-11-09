@@ -20,10 +20,6 @@ Testing linked ok!!*/
   justify-content: space-between;
 }
 
-/* .main-nav {
-  visibility: hidden;
-} Behövs denna?      */
-
 .main-nav-container {
   display: none;
 }
@@ -37,6 +33,7 @@ Testing linked ok!!*/
 
 .main-header-customer {
   display: flex;
+  cursor: pointer;
 }
 
 .main-header-customer-item {
@@ -97,6 +94,12 @@ Testing linked ok!!*/
   margin: auto;
 }
 
+.main-nav-item *:hover {
+  background-color: #f6be0e;
+  color: #141315;
+  transition: 500ms ease-in;
+}
+
 .main-header .checkbox {
   position: absolute;
   display: block;
@@ -132,6 +135,10 @@ Testing linked ok!!*/
   text-decoration: none;
   font-size: larger;
   color: #141315;
+}
+
+.mobile-nav-item:hover {
+  background-color: #808076;
 }
 
 .mobile-nav-item {
@@ -192,5 +199,11 @@ Testing linked ok!!*/
   }
   .burger-menu-button {
     display: none;
+  }
+  .main-header .checkbox {
+    display: none;
+  }
+  .mobile-nav {
+    visibility: hidden;
   }
 }
