@@ -9,3 +9,94 @@
   background-color: red;
 } 
 Testing linked ok!!*/
+
+.main-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #966f33;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav {
+  /* visibility: hidden; */
+}
+
+.main-nav-container {
+  display: none;
+}
+
+.main-nav-items {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.main-header-customer {
+  display: flex;
+}
+
+.main-header-customer-item {
+  display: flex;
+  margin: auto;
+}
+
+.burger-menu-button {
+  width: 3rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding-top: 0;
+  padding-bottom: 0;
+  vertical-align: middle;
+  margin-left: 1rem;
+}
+
+.burger-bar {
+  width: 100%;
+  height: 0.2rem;
+  background: black;
+  display: block;
+  margin: 0.6rem 0;
+}
+
+.main-header-logo img {
+  height: 5rem;
+  vertical-align: middle;
+}
+
+.main-header-customer img {
+  height: 2.5rem;
+  vertical-align: middle;
+}
+
+.main-header-customer {
+  margin-right: 1rem;
+}
+
+.search-icon,
+.profile-icon {
+  display: none;
+}
+
+.main-nav-item a {
+  background-color: #1f568f;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  margin: auto;
+}
+
+@media (min-width: 700px) {
+  .main-nav-container {
+    display: block;
+  }
+  .burger-menu-button {
+    display: none;
+  }
+}
