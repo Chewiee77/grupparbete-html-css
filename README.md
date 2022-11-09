@@ -16,6 +16,7 @@ There is also some demands:
 We started with an opening meeting setting some rules for the project, and deciding what product to choose. 
 We chose Ear-Muffs with voice-equalizer that could filter out voicr frequencies and remove disturbing noice.
 Now it was time to start.
+To make things clearer we started a [Trello-board](https://trello.com/b/h092tMTS/fe22-html-css-grupparbete)
 
 ### The design
 Due to the limited time we did a quick research of the Industries. We also conducted interviews.
@@ -24,3 +25,4 @@ and after evaluating it we went on to making HiFi-prototypes.
 
 Link to the project in [Figma](https://www.figma.com/file/1echCMJAgiBweNwOZh5TGl/Grupparbete-HTML%2FCSS?node-id=17%3A194)
 
+After finishing the work on our Hi-Fi prototypes we conducted some quick usertests and then it was time to start coding!
