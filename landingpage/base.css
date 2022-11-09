@@ -11,7 +11,6 @@
 Testing linked ok!!*/
 /*  -------------------- HEADER -------------------------------  */
 .main-header {
-  width: 100%;
   position: sticky;
   top: 0;
   left: 0;
@@ -265,9 +264,10 @@ Testing linked ok!!*/
   background-color: #141315;
   display: flex;
   justify-content: center;
-  width: 100%;
-  position: sticky;
+  align-items: center;
+  position: relative;
   left: 0;
+  right: 0;
   bottom: 0;
   height: auto;
 }
