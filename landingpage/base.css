@@ -44,8 +44,13 @@ Testing linked ok!!*/
   margin: auto;
 }
 
+.burger-logo-container {
+  display: flex;
+  align-items: center;
+}
+
 .burger-menu-button {
-  width: 3rem;
+  width: 2.7rem;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -57,7 +62,7 @@ Testing linked ok!!*/
 
 .burger-bar {
   width: 100%;
-  height: 0.2rem;
+  height: 0.3rem;
   background: black;
   display: block;
   margin: 0.6rem 0;
@@ -90,6 +95,95 @@ Testing linked ok!!*/
   padding: 1rem;
   display: flex;
   margin: auto;
+}
+
+.main-header .checkbox {
+  position: absolute;
+  display: block;
+  height: 4rem;
+  width: 3rem;
+  top: 0.5rem;
+  left: 1rem;
+  opacity: 0;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  background-color: #966f33;
+  width: fit-content;
+  height: 30rem;
+  z-index: 75;
+  box-shadow: 4px 4px 8px #141315;
+  position: fixed;
+  left: 0;
+  top: 5rem;
+  transform: translateX(-150%);
+  transition: transform 500ms ease-in-out;
+}
+
+.mobile-nav-items {
+  list-style: none;
+  /* background-color: hotpink; */
+}
+.mobile-nav-items a {
+  text-decoration: none;
+  font-size: larger;
+  color: #141315;
+}
+
+.mobile-nav-item {
+  padding: 1rem;
+  border: 2px solid #141315;
+  box-shadow: inset 0px 0px 8px 2px #141315;
+}
+
+.mobile-nav-items li + li {
+  border-top: none;
+}
+
+.burger-menu-button .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+.burger-menu-button .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+.burger-menu-button .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+#burger-button:checked ~ .mobile-nav {
+  transform: translateX(0);
+}
+#burger-button:checked ~ .burger-logo-container .burger-menu-button .line1 {
+  transform: rotate(45deg);
+}
+#burger-button:checked ~ .burger-logo-container .burger-menu-button .line2 {
+  transform: scaleY(0);
+}
+#burger-button:checked ~ .burger-logo-container .burger-menu-button .line3 {
+  transform: rotate(-45deg);
+}
+#burger-button:checked ~ .backdrop {
+  display: block;
+  opacity: 0.2;
+}
+
+.backdrop {
+  display: none;
+  position: fixed;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 100vw;
+  height: 100vh;
+  background: #141315;
+  transition: opacity 200ms linear;
 }
 
 @media (min-width: 700px) {
