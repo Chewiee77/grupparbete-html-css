@@ -20,10 +20,6 @@ Testing linked ok!!*/
   justify-content: space-between;
 }
 
-/* .main-nav {
-  visibility: hidden;
-} Behövs denna?      */
-
 .main-nav-container {
   display: none;
 }
@@ -100,3 +96,5 @@ Testing linked ok!!*/
     display: none;
   }
 }
+
+/* ---------------------FOOTER----------------------------------- */
