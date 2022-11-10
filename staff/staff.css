@@ -1,5 +1,5 @@
 
-h1 {text-align: center;}
+h1 {text-align: center; padding-top:1em;}
 
 
 p {margin-top: 1em; margin-left: 0.5em; margin-right: 0.5em; margin-bottom: 1em;}
@@ -8,8 +8,10 @@ main {
     display: flex;
     margin-bottom: 2em;
     align-items: center;
-    height: fit-content;
+    position: relative;
+    height:fit-content;
 }
+
 
 /*_____Välkommen-sektion från och med denna rad____________*/
 
@@ -22,6 +24,7 @@ main {
     height: fit-content;
     margin-left: auto;
     margin-right: auto;
+    z-index: -1;
 }
 
 .greetings-card-content > img {
@@ -43,6 +46,7 @@ main {
     margin-top: 2em;
     margin-bottom: 2em;
     margin-left:1em;
+    z-index: -1;
 }
 
 .section-team-container-staffcard {
@@ -80,6 +84,8 @@ span {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin-left:1em;
+        margin-right:1em;
         }
     }
 
