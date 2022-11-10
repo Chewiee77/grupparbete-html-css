@@ -95,10 +95,12 @@ span {
         margin-left: 1em;
         align-items: center;
         justify-content: center;
+        z-index:-1;
       }
       .greetings-card-content {
         margin-left:1em;
         margin-right:1em;
+        z-index:-1;
     }
 }
 
@@ -106,11 +108,13 @@ span {
     main {
       display: flex;
       flex-direction: column;
+      z-index:-1;
     }
 
     .greetings-card-content {
         margin-left:1em;
         margin-right:1em;
+        z-index:-1;
     }
 
     .section-team-container-staffcard {
@@ -120,10 +124,21 @@ span {
         flex-direction: column;
         align-items: center;
         flex-shrink: 1;
+        
     }
 
     .section-team-container-staffcard > img {
         flex-shrink: 2;
+    }
+
+  }
+  
+
+  @media (min-width: 700px) {
+        .greetings-card-content {
+        margin-left:1em;
+        margin-right:1em;
+        z-index:-1;
     }
 
   }
