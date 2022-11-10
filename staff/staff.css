@@ -1,0 +1,68 @@
+h1 {font-size: 32px; text-align: center;}
+
+p {margin-top: 0.2em; margin-left: 0.5em;}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+/*_____VÄLKOMMEN-sektion från och med denna rad____________*/
+
+.greetings-card {
+    border: 0.5px solid #71797e30;
+    box-shadow: 3px 4px 4px #71797e7d;
+    width: 35vw;
+    margin-top: 4em;
+    margin-bottom: 2em;
+    border-radius: 0.5em;
+}
+
+.greetings-card-content {
+    /* border: 5px dotted green; */
+    max-width: 35vw;
+    object-fit: contain;
+}
+
+.greetings-card-content > img {
+    max-width: 100%;
+    border-radius: 0.5em 0.5em 0em 0em;
+}
+
+
+
+/*_____TEAM-sektion från och med denna rad____________*/
+
+.section-team {
+    /* border: 5px solid red; */
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.section-team-container {
+    /* border: 5px dotted red; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+
+.section-team-container-staffcard {
+    max-width:50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.section-team-container-staffcard > img {max-width:50%;}
+
+.name, .job {font-weight: bold;}
+
+.mail {font-size: 14px;}
