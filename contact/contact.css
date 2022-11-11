@@ -10,6 +10,7 @@ main {
     max-width: 50em;
     display: flex;
     flex-direction: column;
+    padding-top: 1em;
     margin-top:1em;
     margin-bottom:1em;
     margin-left:auto;
@@ -21,9 +22,12 @@ main {
 }
 
 .flexboxcontainer-firstsection {
-    background-color: #966F33;
-    color:white;
+    /* background-color: #966F33; */
+    /* color:white; */
+    border: 0.5em solid #966F33;
+    border-style: inset;
     border-radius: 0.5em;
+    border-color: #966F33;
     box-shadow: 0px 4px 8px #71797e7d;
     width: 70%;
     text-align: center;
@@ -33,15 +37,17 @@ main {
 }
 
 .flexboxcontainer-secondsection {
-    background-color: #966F33;
-    color:white;
+    background-color: #ffffff;
+    /* color:white; */
+    border: 0.5em solid #966F33;
+    border-style: inset;
     border-radius: 0.5em;
     box-shadow: 0px 4px 8px #71797e7d;
     width: 70%;
     text-align: center;
     padding-bottom: 1em;
     margin-top: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
 }
 
 .inputforms {
@@ -58,17 +64,18 @@ main {
 .name-input {
     height: 2em;
     width: 80%;
-    box-shadow: 0px 4px 8px #71797e7d;
+    /* box-shadow: 0px 4px 8px #966F33; */
     border-radius: 0.5em;
     padding-left:0.5em;
+    border-color: #966F33;
 }
 .mail--input {
     height: 2em;
     width: 80%;
-    box-shadow: 0px 4px 8px #71797e7d;
+    /* box-shadow: 0px 4px 8px #966F33; */
     border-radius: 0.5em;
     padding-left:0.5em;
-
+    border-color: #966F33;
 }
 
 
@@ -76,9 +83,10 @@ main {
     margin: 1em;
     height: 10em;
     width: 80%;
-    box-shadow: 0px 4px 8px #71797e7d;
+    /* box-shadow: 0px 4px 8px #966F33; */
     border-radius: 0.5em;
     padding-left:0.5em;
+    border-color: #966F33;
 }
 
 button {
@@ -88,7 +96,7 @@ button {
     border-radius: 0.5em;
     background-color: #aa1b1b;
     color:white;
-    box-shadow: 0px 4px 8px #71797e7d;
+    /* box-shadow: 0px 4px 8px #966F33; */
 }
 
 @media (max-width: 700px) {
