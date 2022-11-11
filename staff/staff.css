@@ -91,11 +91,11 @@ span {
 
 a:link {
     text-decoration: none;
-  }
+}
 
 a:link:hover {
-    color:hotpink;
-  }
+    color:#008954;
+}
 
 
 @media (min-width: 2256px) {
@@ -104,18 +104,19 @@ a:link:hover {
         justify-content: center;
         margin-left:1em;
         margin-right:1em;
-        }
-
-        .section-team-container {
-            max-width: 50em;
-        }
     }
+
+    .section-team-container {
+        max-width: 50em;
+    }
+}
 
 @media (max-width: 1170px) {
   main {
     display: block;
     margin-left: 1em;
         margin-right: 1em;
+<<<<<<< HEAD
     align-items: center;
     justify-content: center;
     z-index: -1;
@@ -125,6 +126,17 @@ a:link:hover {
     margin-right: 1em;
     z-index: -1;
   }
+=======
+        align-items: center;
+        justify-content: center;
+        z-index:-1;
+      }
+    .greetings-card-content {
+        margin-left:1em;
+        margin-right:1em;
+        z-index:-1;
+    }
+>>>>>>> feature-staff
 }
 
 @media (max-width: 700px) {
@@ -147,7 +159,6 @@ a:link:hover {
         flex-direction: column;
         align-items: center;
         flex-shrink: 1;
-        
     }
 
     .section-team-container-staffcard > img {
@@ -165,31 +176,32 @@ a:link:hover {
 }
 
 @media (max-width: 700px) {
-        span {
-            font-size: 1.5em;
-        }
-        
-        .mail {
-            font-size: 1.5em;
-            margin-top: 0.5em;
-            margin-bottom: 2em;
-            border: 1px solid black;
-            border-radius: 0.5em;
-            padding: 1em 2em;
-            text-align: center;
-        }
 
-        .section-team-container {
-            margin-left: auto;
-            margin-right: auto;
-        }
+    span {
+        font-size: 1.5em;
+    }
+        
+    .mail {
+        font-size: 1.5em;
+        margin-top: 0.5em;
+        margin-bottom: 2em;
+        border: 1px solid black;
+        border-radius: 0.5em;
+        padding: 1em 2em;
+        text-align: center;
+    }
+
+    .section-team-container {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
   
 @media (min-width: 700px) {
-        .greetings-card-content {
-        margin-left:1em;
-        margin-right:1em;
-        z-index:-1;
+    .greetings-card-content {
+    margin-left:1em;
+    margin-right:1em;
+    z-index:-1;
     }
 }
 
