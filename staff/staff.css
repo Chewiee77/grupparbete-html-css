@@ -80,6 +80,15 @@ span {
     margin-bottom:0.1em;
 }
 
+a:link {
+    text-decoration: none;
+  }
+
+a:link:hover {
+    color:hotpink;
+  }
+
+
 @media (min-width: 2256px) {
     main {
         display: flex;
@@ -137,14 +146,6 @@ span {
     }
 }
 
-
-  a:link {
-    text-decoration: none;
-  }
-
-  a:link:hover {
-    color:hotpink;
-  }
 
 @media (min-width: 700px) {
         .greetings-card-content {
