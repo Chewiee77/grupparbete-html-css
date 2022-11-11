@@ -15,23 +15,12 @@ body {
     "main main"
     "footer footer";
 }
-/* header {
-  grid-area: header;
-  
-} */
+
 main {
   position: relative;
   grid-area: main;
 }
-footer {
-  grid-area: footer;
-}
 
-/* body {
-
-  background-color: red;
-} 
-Testing linked ok!!*/
 /*  -------------------- HEADER -------------------------------  */
 .main-header {
   grid-area: header;
@@ -223,6 +212,10 @@ Testing linked ok!!*/
 }
 
 /* ---------------------FOOTER----------------------------------- */
+
+footer {
+  grid-area: footer;
+}
 .input-container {
   display: flex;
   gap: 0.5rem;
