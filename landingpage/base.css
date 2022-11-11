@@ -214,6 +214,7 @@ main {
 
 footer {
   grid-area: footer;
+  margin-top: 1rem;
 }
 .input-container {
   display: flex;
