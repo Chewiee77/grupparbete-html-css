@@ -1,10 +1,7 @@
 .slideshow-container {
   position: relative;
   top: 1rem;
-  /* left: 5%;
-  right: 5%; */
   max-width: 700px;
-  /* transform: translate(-50%, -50%); */
   background-color: red;
   border: 1px solid #143115;
   overflow: hidden;
@@ -16,7 +13,6 @@
   bottom: 20px;
   left: 50%;
   transform: translate(-50%);
-  /* background-color: hotpink; */
 }
 
 .slide-nav .slide-dot {
@@ -72,18 +68,13 @@ input[type="radio"] {
 .big-logo {
   display: flex;
   justify-content: center;
-  /* border: 2px solid red; */
   margin: 2rem;
-  /* border-radius: 8px; */
 }
 
 .big-logo img {
-  /* border: 2px solid red; */
-  /* object-fit: scale-down; */
   max-width: 100%;
   border-radius: 8px;
   box-shadow: 0px 0px 8px 4px #143115;
-  /* box-shadow: 4px 4px 6px #143115, -4px -4px 6px #143115; */
 }
 
 .earmuff-big-pic-container {
@@ -99,10 +90,7 @@ input[type="radio"] {
 .earmuff-slideshow-container {
   position: relative;
   bottom: 1rem;
-  /* left: 5%;
-  right: 5%; */
   max-width: 700px;
-  /* transform: translate(-50%, -50%); */
   background-color: red;
   border: 1px solid #143115;
   overflow: hidden;
@@ -114,7 +102,6 @@ input[type="radio"] {
   bottom: 20px;
   left: 50%;
   transform: translate(-50%);
-  /* background-color: hotpink; */
 }
 .earmuff-slide-nav .earmuff-slide-dot {
   height: 10px;
@@ -132,7 +119,6 @@ input[type="radio"] {
 
 .earmuff-radio {
   position: absolute;
-  /* background-color: hotpink; */
   visibility: hidden;
 }
 
