@@ -16,8 +16,8 @@ main {
 /*_____Välkommen-sektion från och med denna rad____________*/
 
 .greetings-card-content {
-    border: 0.5px solid #71797e30;
-    box-shadow: 3px 4px 4px #71797e7d;
+    border: 0.5px 0px solid #71797e30;
+    box-shadow: 0px 4px 6px #71797e7d;
     margin-top: 4em;
     padding-bottom: 2em;
     border-radius: 0.5em;
@@ -25,6 +25,7 @@ main {
     margin-left: auto;
     margin-right: auto;
     z-index: -1;
+    text-align: center;
 }
 
 .greetings-card-content > img {
@@ -96,6 +97,7 @@ span {
     main {
         display: block;
         margin-left: 1em;
+        margin-right: 1em;
         align-items: center;
         justify-content: center;
         z-index:-1;
@@ -136,6 +138,13 @@ span {
 
   }
   
+  a:link {
+    text-decoration: none;
+  }
+
+  a:link:hover {
+    color:hotpink;
+  }
 
   @media (min-width: 700px) {
         .greetings-card-content {
@@ -143,6 +152,26 @@ span {
         margin-right:1em;
         z-index:-1;
     }
+  }
+  @media (max-width: 700px) {
+        span {
+            font-size: 1.5em;
+        }
+        
+        .mail {
+            font-size: 1.5em;
+            margin-top: 0.5em;
+            margin-bottom: 2em;
+            border: 1px solid black;
+            border-radius: 0.5em;
+            padding: 1em 2em;
+            text-align: center;
+        }
 
+        .section-team-container {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
   }
   
