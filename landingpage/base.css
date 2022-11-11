@@ -21,6 +21,7 @@ Testing linked ok!!*/
   background-color: #966f33;
   display: flex;
   justify-content: space-between;
+  z-index: 5;
 }
 
 .main-nav-container {
@@ -273,10 +274,10 @@ Testing linked ok!!*/
 }
 
 footer {
-  width: 100vw;
   position: relative;
   left: 0;
   bottom: 0;
+  margin-top: 1rem;
 }
 
 @media (min-width: 700px) {
