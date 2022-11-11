@@ -1,9 +1,10 @@
-body {
+/* .page-wrapper {
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
-    "header"
-    "main"
-    "footer";
+    "header header"
+    "main main"
+    "footer footer";
 }
 header {
   grid-area: header;
@@ -14,7 +15,7 @@ main {
 }
 footer {
   grid-area: footer;
-}
+} */
 .slideshow-container {
   position: relative;
   top: 1rem;
