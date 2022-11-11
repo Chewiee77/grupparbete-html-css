@@ -5,6 +5,10 @@
   font-family: "Gothic", sans-serif;
 }
 
+body {
+  height: 100vh;
+}
+
 /* body {
   background-color: red;
 } 
@@ -265,11 +269,14 @@ Testing linked ok!!*/
   display: flex;
   justify-content: center;
   align-items: center;
+  height: auto;
+}
+
+footer {
+  width: 100vw;
   position: relative;
   left: 0;
-  right: 0;
   bottom: 0;
-  height: auto;
 }
 
 @media (min-width: 700px) {
