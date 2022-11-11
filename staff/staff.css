@@ -89,14 +89,17 @@ span {
 }
 
 @media (min-width: 2256px) {
-  main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 1em;
-    margin-right: 1em;
-  }
-}
+    main {
+        display: flex;
+        justify-content: center;
+        margin-left:1em;
+        margin-right:1em;
+        }
+
+        .section-team-container {
+            max-width: 50em;
+        }
+    }
 
 @media (max-width: 1170px) {
   main {
