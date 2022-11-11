@@ -1,117 +1,130 @@
-h2 {
-    margin-top:0.5em;
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer";
 }
-
+header {
+  grid-area: header;
+}
 main {
-    height: fit-content;
+  position: relative;
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+}
+h2 {
+  margin-top: 0.5em;
 }
 
 .flexboxcontainer {
-    max-width: 50em;
-    display: flex;
-    flex-direction: column;
-    margin-top:1em;
-    margin-bottom:1em;
-    margin-left:auto;
-    margin-right:auto;
-    align-items: center;
-    background-color: #f7f7f7;
-    box-shadow: 0px 4px 8px #71797e7d;
-    border-radius: 0.5em;
+  max-width: 50em;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  background-color: #f7f7f7;
+  box-shadow: 0px 4px 8px #71797e7d;
+  border-radius: 0.5em;
 }
 
 .flexboxcontainer-firstsection {
-    background-color: #966F33;
-    color:white;
-    border-radius: 0.5em;
-    box-shadow: 0px 4px 8px #71797e7d;
-    width: 70%;
-    text-align: center;
-    padding-bottom: 1em;
-    margin-top: 1em;
-    margin-bottom: 1em;
+  background-color: #966f33;
+  color: white;
+  border-radius: 0.5em;
+  box-shadow: 0px 4px 8px #71797e7d;
+  width: 70%;
+  text-align: center;
+  padding-bottom: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .flexboxcontainer-secondsection {
-    background-color: #966F33;
-    color:white;
-    border-radius: 0.5em;
-    box-shadow: 0px 4px 8px #71797e7d;
-    width: 70%;
-    text-align: center;
-    padding-bottom: 1em;
-    margin-top: 1em;
-    margin-bottom: 1em;
+  background-color: #966f33;
+  color: white;
+  border-radius: 0.5em;
+  box-shadow: 0px 4px 8px #71797e7d;
+  width: 70%;
+  text-align: center;
+  padding-bottom: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .inputforms {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 80%;
-    
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
 }
 
 .name-input {
-    height: 2em;
-    width: 80%;
-    box-shadow: 0px 4px 8px #71797e7d;
-    border-radius: 0.5em;
-    padding-left:0.5em;
+  height: 2em;
+  width: 80%;
+  box-shadow: 0px 4px 8px #71797e7d;
+  border-radius: 0.5em;
+  padding-left: 0.5em;
 }
 .mail--input {
-    height: 2em;
-    width: 80%;
-    box-shadow: 0px 4px 8px #71797e7d;
-    border-radius: 0.5em;
-    padding-left:0.5em;
-
+  height: 2em;
+  width: 80%;
+  box-shadow: 0px 4px 8px #71797e7d;
+  border-radius: 0.5em;
+  padding-left: 0.5em;
 }
 
-
 .question-input {
-    margin: 1em;
-    height: 10em;
-    width: 80%;
-    box-shadow: 0px 4px 8px #71797e7d;
-    border-radius: 0.5em;
-    padding-left:0.5em;
+  margin: 1em;
+  height: 10em;
+  width: 80%;
+  box-shadow: 0px 4px 8px #71797e7d;
+  border-radius: 0.5em;
+  padding-left: 0.5em;
 }
 
 button {
+  height: 3em;
+  width: 8em;
+  border: none;
+  border-radius: 0.5em;
+  background-color: #aa1b1b;
+  color: white;
+  box-shadow: 0px 4px 8px #71797e7d;
+}
+
+@media (max-width: 700px) {
+  .flexboxcontainer {
+    width: 85vw;
+  }
+  .name-input {
+    font-size: 1.5em;
+  }
+  .mail--input {
+    font-size: 1.5em;
+  }
+  .question-input {
+    font-size: 1.5em;
+  }
+  button {
     height: 3em;
     width: 8em;
     border: none;
     border-radius: 0.5em;
     background-color: #aa1b1b;
-    color:white;
+    color: white;
     box-shadow: 0px 4px 8px #71797e7d;
-}
-
-@media (max-width: 700px) {
-    .flexboxcontainer {
-        width: 85vw;
-    }
-    .name-input {
-        font-size: 1.5em;
-    }
-    .mail--input {
-        font-size: 1.5em;
-    }
-    .question-input {
-        font-size: 1.5em;
-    }
-    button {
-        height: 3em;
-        width: 8em;
-        border: none;
-        border-radius: 0.5em;
-        background-color: #aa1b1b;
-        color:white;
-        box-shadow: 0px 4px 8px #71797e7d;
-        font-size: 1.5em;
-    }
+    font-size: 1.5em;
   }
+}
