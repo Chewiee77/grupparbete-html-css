@@ -135,9 +135,9 @@ span {
     .section-team-container-staffcard > img {
         flex-shrink: 2;
     }
+}
 
-  }
-  
+
   a:link {
     text-decoration: none;
   }
@@ -146,14 +146,15 @@ span {
     color:hotpink;
   }
 
-  @media (min-width: 700px) {
+@media (min-width: 700px) {
         .greetings-card-content {
         margin-left:1em;
         margin-right:1em;
         z-index:-1;
     }
-  }
-  @media (max-width: 700px) {
+}
+
+@media (max-width: 700px) {
         span {
             font-size: 1.5em;
         }
@@ -172,5 +173,32 @@ span {
             margin-left: auto;
             margin-right: auto;
         }
-    }
+}
   
+@media (min-width: 700px) {
+        .greetings-card-content {
+        margin-left:1em;
+        margin-right:1em;
+        z-index:-1;
+    }
+}
+
+@media (max-width: 700px) {
+    span {
+        font-size: 1.5em;
+    }  
+    .mail {
+        font-size: 1.5em;
+        margin-top: 0.5em;
+        margin-bottom: 2em;
+        border: 1px solid black;
+        border-radius: 0.5em;
+        padding: 1em 2em;
+        text-align: center;
+    }
+
+    .section-team-container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
