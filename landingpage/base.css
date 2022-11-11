@@ -15,9 +15,10 @@ body {
     "main main"
     "footer footer";
 }
-header {
+/* header {
   grid-area: header;
-}
+  
+} */
 main {
   position: relative;
   grid-area: main;
@@ -33,12 +34,14 @@ footer {
 Testing linked ok!!*/
 /*  -------------------- HEADER -------------------------------  */
 .main-header {
+  grid-area: header;
   position: sticky;
   top: 0;
   left: 0;
   background-color: #966f33;
   display: flex;
   justify-content: space-between;
+  z-index: 5;
 }
 
 .main-nav-container {
@@ -294,13 +297,13 @@ Testing linked ok!!*/
   height: auto;
 }
 
-footer {
+/* footer {
   position: relative;
   left: 0;
   right: 0;
   bottom: 0;
   margin-top: 1rem;
-}
+} */
 
 @media (min-width: 700px) {
   .main-nav-container {
