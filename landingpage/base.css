@@ -5,6 +5,10 @@
   font-family: "Gothic", sans-serif;
 }
 
+body {
+  height: 100vh;
+}
+
 /* body {
   background-color: red;
 } 
@@ -17,6 +21,7 @@ Testing linked ok!!*/
   background-color: #966f33;
   display: flex;
   justify-content: space-between;
+  z-index: 5;
 }
 
 .main-nav-container {
@@ -265,11 +270,14 @@ Testing linked ok!!*/
   display: flex;
   justify-content: center;
   align-items: center;
+  height: auto;
+}
+
+footer {
   position: relative;
   left: 0;
-  right: 0;
   bottom: 0;
-  height: auto;
+  margin-top: 1rem;
 }
 
 @media (min-width: 700px) {
