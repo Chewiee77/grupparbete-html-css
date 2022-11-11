@@ -1,10 +1,31 @@
+.flexboxcontainer > h1 {
+    width:fit-content;
+    margin: 0.5em;
+}
+
+.flexboxcontainer > .flexboxitem > p {
+    margin-bottom: 1em;;
+}
+.flexboxcontainer > .cpu-container> .flexboxitem > p {
+    padding: 0.5em;
+}
+.flexboxcontainer > .product-container> .flexboxitem > p {
+    padding: 0.5em;
+}
+
+
 .flexboxcontainer {
     width: 50vw;
     display: flex;
     flex-direction: column;
+    margin-top:1em;
+    margin-bottom:1em;
     margin-left:auto;
     margin-right:auto;
     align-items: center;
+    background-color: #f7f7f7;
+    box-shadow: 0px 4px 8px #71797e7d;
+    border-radius: 0.5em;
 }
 
 .flexboxcontainer > * {
@@ -14,6 +35,7 @@
 .flexboxcontainer > div > img {
     width:100%;
     height:100%;
+    border-radius: 0.5em;
 }
 
 .flexboxcontainer .small > * {
@@ -24,14 +46,64 @@
 .cpu-container {
     display: flex;
     align-items: center;
+    background-color: #1f568f;
+    color:white;
+    border-radius: 0.5em;
+    box-shadow: 0px 1px 4px #71797e7d;
+}
+
+.cpu-container img {
+    margin-left:0.5em;
+    border-radius: 0em 0.5em 0.5em 0em;
 }
 
 .product-container {
     display: flex;
     align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 4px #71797e7d;
+    border-radius: 0.5em;
 }
 
 .productimages {
     display: flex;
     width:auto;
 }
+
+@media (max-width: 700px) {
+    .cpu-container {
+      display: flex;
+      flex-direction: column;
+    }
+    .cpu-container > .flexboxitem.small > img {
+        margin-top: 1em;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 0em 0em 0.5em 0.5em;
+    }
+
+    .product-container {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top:1em;
+        padding-left:1em;
+        padding-right:1em;
+    }
+    .product-container > .flexboxitem.small > img {
+        margin-top: 1em;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .small {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+    }
+    .flexboxcontainer {
+        min-width: 85vw;
+    }
+  }
