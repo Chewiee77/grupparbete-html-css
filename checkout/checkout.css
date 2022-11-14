@@ -40,3 +40,10 @@ legend {
   font-weight: 600;
   color: #141315S;
 }
+
+@media (max-width: 500px) {
+  .checkout-form {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
