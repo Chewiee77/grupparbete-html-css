@@ -47,6 +47,7 @@ main {
   height: 400px;
   width: 250px;
   border: 1px solid #141315;
+  border-right: none;
   background-color: white;
   visibility: hidden;
   display: flex;
