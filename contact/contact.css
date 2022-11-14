@@ -1,5 +1,15 @@
+h1 {
+  font-size: 3em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
 h2 {
   margin-top: 0.5em;
+}
+
+h3 {
+  padding-top:0.2em;
 }
 
 .flexboxcontainer {
@@ -14,6 +24,8 @@ h2 {
   background-color: #f7f7f7;
   box-shadow: 0px 4px 8px #71797e7d;
   border-radius: 0.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .flexboxcontainer-firstsection {
@@ -23,6 +35,7 @@ h2 {
   box-shadow: 0px 4px 8px #71797e7d;
   width: 70%;
   text-align: center;
+  padding-top: 1em;
   padding-bottom: 1em;
   margin-top: 1em;
   margin-bottom: 1em;
@@ -35,6 +48,7 @@ h2 {
   box-shadow: 0px 4px 8px #71797e7d;
   width: 70%;
   text-align: center;
+  padding-top: 1em;
   padding-bottom: 1em;
   margin-top: 1em;
   margin-bottom: 1em;
@@ -51,14 +65,14 @@ h2 {
 }
 
 .name-input {
-  height: 2em;
+  height: 3em;
   width: 80%;
   box-shadow: 0px 4px 8px #71797e7d;
   border-radius: 0.5em;
   padding-left: 0.5em;
 }
 .mail--input {
-  height: 2em;
+  height: 3em;
   width: 80%;
   box-shadow: 0px 4px 8px #71797e7d;
   border-radius: 0.5em;
@@ -84,12 +98,47 @@ button {
   box-shadow: 0px 4px 8px #71797e7d;
 }
 
+.flexboxcontainer-thirdsection {
+  color: white;
+  border-radius: 0.5em;
+  box-shadow: 0px 4px 8px #71797e7d;
+  width: 70%;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 3em;
+  height: fit-content;
+}
+
+.flexboxcontainer-thirdsection  > img {
+  width: 100%;
+  border-radius: 0.5em;
+}
+
+
 @media (max-width: 700px) {
   .flexboxcontainer {
-    width: 85vw;
+    width: 95vw;
   }
+
+  .flexboxcontainer-firstsection {
+    width:95%;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+  .flexboxcontainer-secondsection {
+    width:95%;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+  .flexboxcontainer-thirdsection {
+    width:95%;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
   .name-input {
     font-size: 1.5em;
+    margin-bottom: 1em;
   }
   .mail--input {
     font-size: 1.5em;
