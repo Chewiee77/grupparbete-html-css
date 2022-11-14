@@ -152,14 +152,10 @@ input[type="radio"] {
 @media (min-width: 700px) {
   .slideshow-container,
   .earmuff-slideshow-container {
-    min-width: 627px;
     max-width: 1000px;
     left: 50%;
     transform: translate(-50%);
   }
-}
-
-@media (min-width: 1000px) {
   .earmuff-slideshow-container {
     display: none;
   }
