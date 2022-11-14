@@ -21,16 +21,15 @@ main {
 /*_____Välkommen-sektion från och med denna rad____________*/
 
 .greetings-card-content {
-    border: 0.5px 0px solid #71797e30;
-    box-shadow: 0px 4px 6px #71797e7d;
-    margin-top: 4em;
-    padding-bottom: 2em;
-    border-radius: 0.5em;
-    height: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    z-index: -1;
-    text-align: center;
+  border: 0.5px 0px solid #71797e30;
+  box-shadow: 0px 4px 6px #71797e7d;
+  margin-top: 4em;
+  padding-bottom: 2em;
+  border-radius: 0.5em;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .greetings-card-content > img {
@@ -51,7 +50,6 @@ main {
   margin-top: 2em;
   margin-bottom: 2em;
   margin-left: 1em;
-  z-index: -1;
 }
 
 .section-team-container-staffcard {
@@ -89,41 +87,38 @@ span {
   margin-bottom: 0.1em;
 }
 
-a:link {
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-a:link:hover {
-    color:#008954;
+a:hover {
+  color: #008954;
 }
-
 
 @media (min-width: 2256px) {
-    main {
-        display: flex;
-        justify-content: center;
-        margin-left:1em;
-        margin-right:1em;
-    }
+  main {
+    display: flex;
+    justify-content: center;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
 
-    .section-team-container {
-        max-width: 50em;
-    }
+  .section-team-container {
+    max-width: 50em;
+  }
 }
 
 @media (max-width: 1170px) {
   main {
     display: block;
     margin-left: 1em;
-        margin-right: 1em;
+    margin-right: 1em;
     align-items: center;
     justify-content: center;
-    z-index: -1;
   }
   .greetings-card-content {
     margin-left: 1em;
     margin-right: 1em;
-    z-index: -1;
   }
 }
 
@@ -131,85 +126,78 @@ a:link:hover {
   main {
     display: flex;
     flex-direction: column;
-    z-index: -1;
   }
 
   .greetings-card-content {
     margin-left: 1em;
     margin-right: 1em;
-    z-index: -1;
   }
 
-    .section-team-container-staffcard {
-        min-width: 100%;
-        max-width: none;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex-shrink: 1;
-    }
+  .section-team-container-staffcard {
+    min-width: 100%;
+    max-width: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 1;
+  }
 
-    .section-team-container-staffcard > img {
-        flex-shrink: 2;
-    }
+  .section-team-container-staffcard > img {
+    flex-shrink: 2;
+  }
 }
 
-
 @media (min-width: 700px) {
-        .greetings-card-content {
-        margin-left:1em;
-        margin-right:1em;
-        z-index:-1;
-    }
+  .greetings-card-content {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
 }
 
 @media (max-width: 700px) {
+  span {
+    font-size: 1.5em;
+  }
 
-    span {
-        font-size: 1.5em;
-    }
-        
-    .mail {
-        font-size: 1.5em;
-        margin-top: 0.5em;
-        margin-bottom: 2em;
-        border: 1px solid black;
-        border-radius: 0.5em;
-        padding: 1em 2em;
-        text-align: center;
-    }
+  .mail {
+    font-size: 1.5em;
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+    border: 1px solid black;
+    border-radius: 0.5em;
+    padding: 1em 2em;
+    text-align: center;
+  }
 
-    .section-team-container {
-        margin-left: auto;
-        margin-right: auto;
-    }
+  .section-team-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
-  
+
 @media (min-width: 700px) {
-    .greetings-card-content {
-    margin-left:1em;
-    margin-right:1em;
-    z-index:-1;
-    }
+  .greetings-card-content {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
 }
 
 @media (max-width: 700px) {
-    span {
-        font-size: 1.5em;
-    }  
-    .mail {
-        font-size: 1.5em;
-        margin-top: 0.5em;
-        margin-bottom: 2em;
-        border: 1px solid black;
-        border-radius: 0.5em;
-        padding: 1em 2em;
-        text-align: center;
-    }
+  span {
+    font-size: 1.5em;
+  }
+  .mail {
+    font-size: 1.5em;
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+    border: 1px solid black;
+    border-radius: 0.5em;
+    padding: 1em 2em;
+    text-align: center;
+  }
 
-    .section-team-container {
-        margin-left: auto;
-        margin-right: auto;
-    }
+  .section-team-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
-  
