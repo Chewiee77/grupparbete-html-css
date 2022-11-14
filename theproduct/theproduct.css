@@ -82,6 +82,11 @@
     .cpu-container {
       display: flex;
       flex-direction: column;
+      padding-top:1em;
+    }
+
+    .cpu-container > .flexboxitem > p {
+        margin-right:1em;
     }
     .cpu-container > .flexboxitem.small > img {
         margin-top: 1em;
