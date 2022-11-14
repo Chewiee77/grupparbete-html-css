@@ -47,3 +47,24 @@ legend {
     margin-right: 1rem;
   }
 }
+.pay-btn-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 5rem;
+}
+
+.pay-btn-container > div {
+  padding: 1rem;
+  box-shadow: 4px 4px 6px #141315;
+}
+.pay-btn-container a {
+  text-decoration: none;
+  color: white;
+}
+
+.back-btn {
+  background-color: #1f568f;
+}
+.buy-now-btn {
+  background-color: #008954;
+}
