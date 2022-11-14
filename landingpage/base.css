@@ -48,6 +48,7 @@ main {
   width: 250px;
   border: 1px solid #141315;
   background-color: white;
+  visibility: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -75,6 +76,7 @@ main {
 
 #chat-button:checked ~ .chat-modal {
   transform: translateX(0%);
+  visibility: visible;
 }
 
 /* ------------------------------- BACKDROP --------------------------------- */
@@ -292,7 +294,8 @@ main {
 .article2-delete-btn:checked ~ h3 {
   display: none;
 }
-.article1-delete-btn:checked ~ .order-total .price-total {
+
+.article2-delete-btn:checked + .order-total {
   display: none;
 }
 
