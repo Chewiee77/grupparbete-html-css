@@ -24,6 +24,6 @@ p {
   max-width: 400px;
 }
 .confirm-logo {
-  min-width: min-content;
+  min-width: 200px;
   padding: 1rem;
 }
