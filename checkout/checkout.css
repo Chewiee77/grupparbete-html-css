@@ -1,0 +1,42 @@
+.checkout-form {
+  margin: 2rem auto;
+  max-width: 30rem;
+  box-shadow: 4px 4px 6px #966f33;
+}
+
+.form-input-container {
+  position: relative;
+  margin: 2rem;
+  border: 2px solid #141315;
+}
+
+.form-input-container label {
+  position: absolute;
+  top: -0.7rem;
+  left: 1rem;
+  padding: 2px;
+  background-color: white;
+  /* z-index: 1; */
+}
+
+.form-input-container input {
+  padding: 1rem;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+input::placeholder {
+  color: rgb(180, 175, 175);
+}
+
+.form-input-container select {
+  padding: 1rem;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+legend {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #141315S;
+}

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../landingpage/base.css" />
+    <link rel="stylesheet" href="../checkout/checkout.css" />
     <title>AudioTech Innovate and pioneer</title>
   </head>
   <body>
@@ -120,6 +121,54 @@
         <p>Hej! Hur kan vi hjälpa dig idag?</p>
         <input type="text" placeholder="Fråga?" name="" id="" />
       </div>
+      <!-- CHECKOUT ---------------------------------------------- -->
+      <fieldset class="checkout-form">
+        <legend>Leveransuppgifter</legend>
+        <div class="form-input-container">
+          <label>Namn</label>
+          <input
+            type="text"
+            placeholder="Förnamn Efternamn"
+            class="input-text"
+          />
+        </div>
+        <div class="form-input-container">
+          <label>Företag</label>
+          <input type="text" placeholder="Företaget AB" class="input-name" />
+        </div>
+        <div class="form-input-container">
+          <label>Adress</label>
+          <input type="text" placeholder="Vägvägen 2" class="input-name" />
+        </div>
+        <div class="form-input-container">
+          <label>Postnummer & Ort</label>
+          <input type="text" placeholder="12345 Orten" class="input-name" />
+        </div>
+        <div class="form-input-container">
+          <label>Telefonnummer</label>
+          <input type="text" placeholder="XXX-XXXXXXX" class="input-name" />
+        </div>
+        <div class="form-input-container">
+          <label>Epost</label>
+          <input
+            type="email"
+            placeholder="example@mail.com"
+            class="input-name"
+          />
+        </div>
+        <div class="form-input-container">
+          <div class="pay">
+            <label for="payment">Välj betalsätt</label>
+          </div>
+          <div class="col-75">
+            <select id="pay-option" name="payment">
+              <option value="VISA/Mastercard">VISA/Mastercard</option>
+              <option value="canada">KLARNA</option>
+              <option value="usa">SWISH</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
     </main>
     <footer>
       <div class="footer-container">
