@@ -116,7 +116,6 @@ a:link:hover {
     display: block;
     margin-left: 1em;
         margin-right: 1em;
-<<<<<<< HEAD
     align-items: center;
     justify-content: center;
     z-index: -1;
@@ -126,17 +125,6 @@ a:link:hover {
     margin-right: 1em;
     z-index: -1;
   }
-=======
-        align-items: center;
-        justify-content: center;
-        z-index:-1;
-      }
-    .greetings-card-content {
-        margin-left:1em;
-        margin-right:1em;
-        z-index:-1;
-    }
->>>>>>> feature-staff
 }
 
 @media (max-width: 700px) {
