@@ -52,6 +52,10 @@
     box-shadow: 0px 1px 4px #71797e7d;
 }
 
+.cpu-container p {
+    margin-left: 1em;
+}
+
 .cpu-container img {
     margin-left:0.5em;
     border-radius: 0em 0.5em 0.5em 0em;
@@ -63,6 +67,10 @@
     background-color: #ffffff;
     box-shadow: 0px 1px 4px #71797e7d;
     border-radius: 0.5em;
+}
+
+.product-container > div > img {
+    border-radius: 0.5em 0em 0em 0.5em;
 }
 
 .productimages {
