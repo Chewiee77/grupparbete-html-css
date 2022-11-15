@@ -5,6 +5,12 @@
   font-family: "Gothic", sans-serif;
 }
 
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: inset 0px 0px 8px #1f568f;
+}
 body {
   height: 100vh;
   display: grid;
@@ -440,7 +446,7 @@ footer {
   color: rgb(212, 208, 208);
 }
 .mail-input:focus {
-  box-shadow: inset 0px 0px 1px 1px #1f568f;
+  box-shadow: inset 0px 0px 8px #1f568f;
 }
 
 .sub-button {
