@@ -22,7 +22,7 @@ h3 {
   margin-right: auto;
   align-items: center;
   background-color: #f7f7f7;
-  box-shadow: 0px 4px 8px #71797e7d;
+  box-shadow: 4px 4px 6px #966f33;
   border-radius: 0.5em;
   padding-top: 1em;
   padding-bottom: 1em;
@@ -32,7 +32,7 @@ h3 {
   background-color: #966f33;
   color: white;
   border-radius: 0.5em;
-  box-shadow: 0px 4px 8px #71797e7d;
+  box-shadow: 4px 4px 8px #141315;
   width: 70%;
   text-align: center;
   padding-top: 1em;
@@ -45,7 +45,7 @@ h3 {
   background-color: #966f33;
   color: white;
   border-radius: 0.5em;
-  box-shadow: 0px 4px 8px #71797e7d;
+  box-shadow: 4px 4px 8px #141315;
   width: 70%;
   text-align: center;
   padding-top: 1em;
@@ -60,20 +60,18 @@ h3 {
   margin-top: 1em;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   width: 80%;
 }
 
 .name-input {
   height: 3em;
-  width: 80%;
   box-shadow: 0px 4px 8px #71797e7d;
   border-radius: 0.5em;
   padding-left: 0.5em;
 }
 .mail--input {
   height: 3em;
-  width: 80%;
   box-shadow: 0px 4px 8px #71797e7d;
   border-radius: 0.5em;
   padding-left: 0.5em;
@@ -102,7 +100,7 @@ button {
 .flexboxcontainer-thirdsection {
   color: white;
   border-radius: 0.5em;
-  box-shadow: 0px 4px 8px #71797e7d;
+  box-shadow: 4px 4px 8px #141315;
   width: 70%;
   text-align: center;
   margin-top: 1em;
