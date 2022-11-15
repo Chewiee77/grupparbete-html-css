@@ -38,7 +38,7 @@ input::placeholder {
 legend {
   font-size: 1.1rem;
   font-weight: 600;
-  color: #141315S;
+  color: #141315;
 }
 
 @media (max-width: 500px) {
@@ -46,4 +46,25 @@ legend {
     margin-left: 1rem;
     margin-right: 1rem;
   }
+}
+.pay-btn-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 5rem;
+}
+
+.pay-btn-container > div {
+  padding: 1rem;
+  box-shadow: 4px 4px 6px #141315;
+}
+.pay-btn-container a {
+  text-decoration: none;
+  color: white;
+}
+
+.back-btn {
+  background-color: #1f568f;
+}
+.buy-now-btn {
+  background-color: #008954;
 }
