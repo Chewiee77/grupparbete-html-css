@@ -68,7 +68,7 @@ main {
 }
 
 .section-team-container-staffcard > img {
-  max-width: 60%;
+  max-width: 80%;
   margin-top: 1em;
   flex-grow: 1;
 }
@@ -104,7 +104,7 @@ a {
   }
 
   .section-team-container {
-    max-width: 50em;
+    max-width: 70em;
   }
 }
 
@@ -133,6 +133,7 @@ a {
   .greetings-card-content {
     margin-left: 1em;
     margin-right: 1em;
+    max-width: 83vh;
   }
   
 }
@@ -140,6 +141,12 @@ a {
 @media (min-width: 1170px) and (max-width: 1365px) {
   .section-team-container-staffcard {
     width: 50%;
+  }
+}
+
+@media (min-width: 1170px) {
+  .section-team-container-staffcard {
+    width: 30%;
   }
 }
 
@@ -171,8 +178,9 @@ a {
   }
 
   .greetings-card-content {
-    margin-left: 1em;
-    margin-right: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
   }
 
   .section-team-container-staffcard {
@@ -183,7 +191,7 @@ a {
     align-items: center;
     flex-shrink: 1;
     box-shadow: 0px 0px 10px #71797e7d;
-    border-radius: 2em;
+    border-radius: 0.5em;
     margin-bottom: 1em;
     margin-top: 1em;
     font-size: 1.2em;
@@ -192,6 +200,7 @@ a {
   .section-team-container-staffcard > img {
     flex-shrink: 2;
     margin-bottom: 1em;
+    min-width: 10%;
   }
   .section-team-container {
     margin-left: auto;
