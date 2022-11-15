@@ -5,6 +5,25 @@
   font-family: "Gothic", sans-serif;
 }
 
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: inset 0px 0px 8px #1f568f;
+}
+
+input:invalid {
+  box-shadow: inset 0px 0px 8px #aa1b1b;
+}
+input:invalid:required,
+select:required {
+  box-shadow: inset 0px 0px 8px #f6be0e;
+}
+input::placeholder,
+input::-ms-value {
+  color: rgb(180, 175, 175);
+}
+
 body {
   height: 100vh;
   display: grid;
@@ -336,7 +355,7 @@ main {
 }
 
 .cart-modal-container h1,
-h3 {
+.cart-modal-container h3 {
   padding: 1rem;
 }
 
@@ -440,7 +459,7 @@ footer {
   color: rgb(212, 208, 208);
 }
 .mail-input:focus {
-  box-shadow: inset 0px 0px 1px 1px #1f568f;
+  box-shadow: inset 0px 0px 8px #1f568f;
 }
 
 .sub-button {

@@ -1,7 +1,9 @@
 .checkout-form {
   margin: 2rem auto;
+  padding-top: 1rem;
   max-width: 30rem;
   box-shadow: 4px 4px 6px #966f33;
+  border-radius: 8px;
 }
 
 .form-input-container {
@@ -23,10 +25,6 @@
   padding: 1rem;
   width: 100%;
   font-size: 1.2rem;
-}
-
-input::placeholder {
-  color: rgb(180, 175, 175);
 }
 
 .form-input-container select {
@@ -67,4 +65,12 @@ legend {
 }
 .buy-now-btn {
   background-color: #008954;
+}
+.req-text {
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+}
+.req-text > h1 {
+  color: #f6be0e;
 }

@@ -122,14 +122,15 @@
         <input type="text" placeholder="Fråga?" name="" id="" />
       </div>
       <!-- CHECKOUT ---------------------------------------------- -->
-      <fieldset class="checkout-form">
-        <legend>Leveransuppgifter</legend>
-        <div class="form-input-container">
-          <label>Namn</label>
+      <form class="checkout-form">
+        <!-- <legend>Leveransuppgifter</legend> -->
+        <div class="form-input-container first-form">
+          <label>Namn *</label>
           <input
             type="text"
             placeholder="Förnamn Efternamn"
             class="input-text"
+            required
           />
         </div>
         <div class="form-input-container">
@@ -137,37 +138,47 @@
           <input type="text" placeholder="Företaget AB" class="input-name" />
         </div>
         <div class="form-input-container">
-          <label>Adress</label>
-          <input type="text" placeholder="Vägvägen 2" class="input-name" />
+          <label>Adress *</label>
+          <input
+            type="text"
+            placeholder="Vägvägen 2"
+            class="input-name"
+            required
+          />
         </div>
         <div class="form-input-container">
-          <label>Postnummer & Ort</label>
-          <input type="text" placeholder="12345 Orten" class="input-name" />
+          <label>Postnummer & Ort *</label>
+          <input
+            type="text"
+            placeholder="12345 Orten"
+            class="input-name"
+            required
+          />
         </div>
         <div class="form-input-container">
           <label>Telefonnummer</label>
           <input type="text" placeholder="XXX-XXXXXXX" class="input-name" />
         </div>
         <div class="form-input-container">
-          <label>Epost</label>
-          <input
-            type="email"
-            placeholder="example@mail.com"
-            class="input-name"
-          />
+          <label>Epost *</label>
+          <input type="email" class="input-name" required pattern="a@a" />
         </div>
         <div class="form-input-container">
           <div class="pay">
-            <label for="payment">Välj betalsätt</label>
+            <label for="payment">Välj betalsätt *</label>
           </div>
           <div class="pay-container">
-            <select class="pay-option" name="payment">
+            <select class="pay-option" name="payment" required>
               <option value="">Välj betalsätt...</option>
               <option value="VISA/Mastercard">VISA/Mastercard</option>
               <option value="canada">KLARNA</option>
               <option value="usa">SWISH</option>
             </select>
           </div>
+        </div>
+        <div class="req-text">
+          <h1>*</h1>
+          <h3>= required</h3>
         </div>
         <div class="pay-btn-container">
           <div class="back-btn">
@@ -177,7 +188,7 @@
             <a href="/orderconfirm/orderconfirm.html">Slutför köp</a>
           </div>
         </div>
-      </fieldset>
+      </form>
     </main>
     <footer>
       <div class="footer-container">

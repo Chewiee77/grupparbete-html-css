@@ -9,7 +9,13 @@ h2 {
 }
 
 h3 {
-  padding-top:0.2em;
+  padding-top: 0.2em;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 main {
@@ -29,7 +35,7 @@ main {
   align-items: center;
   justify-content: center;
   background-color: #f7f7f7;
-  box-shadow: 0px 0px 8px #71797e7d;
+  box-shadow: 4px 4px 6px #966f33;
   border-radius: 0.5em;
   padding-top: 1em;
   padding-bottom: 1em;
@@ -39,7 +45,7 @@ main {
   background-color: #966f33;
   color: white;
   border-radius: 0.5em;
-  box-shadow: 0px 4px 8px #71797e7d;
+  box-shadow: 4px 4px 8px #141315;
   width: 70%;
   text-align: center;
   padding-top: 1em;
@@ -52,7 +58,7 @@ main {
   background-color: #966f33;
   color: white;
   border-radius: 0.5em;
-  box-shadow: 0px 4px 8px #71797e7d;
+  box-shadow: 4px 4px 8px #141315;
   width: 70%;
   text-align: center;
   padding-top: 1em;
@@ -66,20 +72,19 @@ main {
   margin-right: auto;
   margin-top: 1em;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
   width: 80%;
 }
 
 .name-input {
   height: 3em;
-  width: 80%;
   box-shadow: 0px 4px 8px #71797e7d;
   border-radius: 0.5em;
   padding-left: 0.5em;
 }
 .mail--input {
   height: 3em;
-  width: 80%;
   box-shadow: 0px 4px 8px #71797e7d;
   border-radius: 0.5em;
   padding-left: 0.5em;
@@ -89,9 +94,10 @@ main {
   margin: 1em;
   height: 10em;
   width: 80%;
+  resize: none;
   box-shadow: 0px 4px 8px #71797e7d;
   border-radius: 0.5em;
-  padding-left: 0.5em;
+  padding: 0.5em;
 }
 
 button {
@@ -107,7 +113,7 @@ button {
 .flexboxcontainer-thirdsection {
   color: white;
   border-radius: 0.5em;
-  box-shadow: 0px 4px 8px #71797e7d;
+  box-shadow: 4px 4px 8px #141315;
   width: 70%;
   text-align: center;
   margin-top: 1em;
@@ -115,11 +121,10 @@ button {
   height: fit-content;
 }
 
-.flexboxcontainer-thirdsection  > img {
+.flexboxcontainer-thirdsection > img {
   width: 100%;
   border-radius: 0.5em;
 }
-
 
 @media (max-width: 700px) {
   .flexboxcontainer {
@@ -127,21 +132,21 @@ button {
   }
 
   .flexboxcontainer-firstsection {
-    width:95%;
+    width: 95%;
     padding-left: 0.5em;
     padding-right: 0.5em;
   }
   .flexboxcontainer-secondsection {
-    width:95%;
+    width: 95%;
     padding-left: 0.5em;
     padding-right: 0.5em;
   }
   .flexboxcontainer-thirdsection {
-    width:95%;
+    width: 95%;
     padding-left: 0.5em;
     padding-right: 0.5em;
   }
-  
+
   .inputforms {
     flex-wrap: wrap;
   }
