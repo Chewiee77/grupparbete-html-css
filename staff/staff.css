@@ -15,7 +15,7 @@ main {
   margin-bottom: 2em;
   align-items: center;
   position: relative;
-  height: fit-content;
+  height: 100%;
 }
 
 /*_____Välkommen-sektion från och med denna rad____________*/
@@ -30,7 +30,7 @@ main {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  align-self: flex-start;
+  align-self: center;
 }
 
 .greetings-card-content > img {
@@ -51,6 +51,7 @@ main {
   margin-top: 2em;
   margin-bottom: 2em;
   margin-left: 1em;
+  gap: 1.5em;
 }
 
 .section-team-container-staffcard {
@@ -94,6 +95,11 @@ a {
 .section-team-container a:hover {
   color: #008954;
 }
+
+.button:active {
+  background: linear-gradient(#ffffff, 90%, #71797E);
+}
+
 
 @media (min-width: 2256px) {
   main {
@@ -150,41 +156,49 @@ a {
   }
 }
 
-@media (min-width: 1996px) and (max-width: 2256px) {
-  .section-team-container {
-    width: 50%;
-  }
-}
-
 @media (max-width: 700px) {
   main {
     display: flex;
     flex-direction: column;
+    margin-left: 0.4em;
+    margin-right: 0.4em;
   }
   span {
     font-size: 1em;
   }
+
   .mail {
     font-size: 1.2em;
+    text-align: center;
+  }
+  
+  .button {
+    display: flex;
+    justify-content: center;
     margin-top: 1.5em;
     margin-bottom: 2em;
-    text-align: center;
+    align-items: center;
     border: 2px solid #1f568f;
     border-radius: 0.5em;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
     padding-top: 1em;
     padding-bottom: 1em;
+    box-shadow: 0px 4px 6px #71797e7d;
+    width: 90%;
+  }
+
+  .name {
+    font-size: 1.5em;
+    margin-top: 0.5em;
   }
 
   .greetings-card-content {
-    margin-left: auto;
-    margin-right: auto;
-    width: 95%;
+    width: 100%;
   }
 
   .section-team-container-staffcard {
-    min-width: 95%;
+    min-width: 100%;
     max-width: none;
     display: flex;
     flex-direction: column;
@@ -194,7 +208,7 @@ a {
     border-radius: 0.5em;
     margin-bottom: 1em;
     margin-top: 1em;
-    font-size: 1.2em;
+    font-size: 1.4em;
   }
 
   .section-team-container-staffcard > img {
@@ -206,6 +220,7 @@ a {
     margin-left: auto;
     margin-right: auto;
     margin-top: 4em;
+    display: flex;
   }
   h2 {
     font-size: 2em;
