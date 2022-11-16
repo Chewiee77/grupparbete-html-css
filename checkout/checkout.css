@@ -51,19 +51,18 @@ legend {
   padding: 5rem;
 }
 
-.pay-btn-container > div {
-  padding: 1rem;
-  box-shadow: 4px 4px 6px #141315;
-}
 .pay-btn-container a {
   text-decoration: none;
   color: white;
+  padding: 1rem;
+  box-shadow: 4px 4px 6px #141315;
+  border-radius: 8px;
 }
 
-.back-btn {
+.back-btn a {
   background-color: #1f568f;
 }
-.buy-now-btn {
+.buy-now-btn a {
   background-color: #008954;
 }
 .req-text {
