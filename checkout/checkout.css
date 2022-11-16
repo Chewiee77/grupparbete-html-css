@@ -47,8 +47,13 @@ legend {
 }
 .pay-btn-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  padding: 5rem;
+  padding-bottom: 5rem;
+}
+
+.pay-btn-container div {
+  margin-top: 3rem;
 }
 
 .pay-btn-container a {
@@ -64,6 +69,7 @@ legend {
 }
 .buy-now-btn a {
   background-color: #008954;
+  margin-top: 2rem;
 }
 .req-text {
   display: flex;
