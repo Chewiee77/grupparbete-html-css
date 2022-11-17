@@ -146,4 +146,12 @@ main {
         margin-left:1em;
         margin-right:1em;
     }
+    .productimages {
+        display: block;
+        width: 100%;
+    }
+    .flexboxcontainer .small > * {
+        width: 100%;
+        height: auto;
+    }
   }
