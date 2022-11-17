@@ -15,6 +15,7 @@ main {
   flex-direction: column;
   align-items: center;
   margin-bottom: 2em;
+  margin-left:auto;
   align-items: center;
   position: relative;
   height: 100%;
@@ -88,7 +89,8 @@ span {
 
 .mail > a {
   text-decoration: none;
-  padding: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .section-team-container a:hover {
@@ -102,6 +104,7 @@ span {
 @media (min-width: 1200px) {
   main {
     flex-direction: row;
+    width: 95vw;
   }
   .section-team-container-staffcard {
     max-width: 33%;
@@ -110,6 +113,21 @@ span {
 
 @media (max-width: 1200px) {
   .mail a {
-    font-size: large;
+    font-size: 18px;
+  }
+  .button {
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    padding-left: 0em;
+    padding-right: 0em;
+    margin-top:0.5em;
+  }
+  .greetings-card-content {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+  .greetings-card-content > img {
+    max-width: 100%;
+    border-radius: 0em;
   }
 }
