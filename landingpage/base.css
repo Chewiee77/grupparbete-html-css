@@ -330,8 +330,8 @@ main {
   background-color: white;
   border: 1px solid #141315;
   top: 500%;
-  left: 30%;
-  right: 30%;
+  left: 50%;
+  transform: translate(-50%);
   min-height: fit-content;
   max-width: 40rem;
   display: none;
@@ -339,7 +339,6 @@ main {
   justify-content: space-between;
   padding: 1rem;
   z-index: 100;
-  /* transform: translateX(-200%); */
 }
 
 .backdrop-cart {
