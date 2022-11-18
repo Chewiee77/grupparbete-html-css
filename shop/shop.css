@@ -4,6 +4,8 @@
   justify-content: center;
   margin: 1rem;
   box-shadow: 0px 0px 4px 4px #141315, 0px 0px 8px 8px #808076;
+  justify-content: space-between;
+  border-radius: 0.5em;
 }
 
 .product-price-container {
@@ -15,6 +17,7 @@
 
 .product-card-container img {
   width: 100%;
+  border-radius: 0.5em 0.5em 0em 0em;
 }
 
 h3 {
@@ -22,9 +25,17 @@ h3 {
 }
 
 .usp-container {
-  padding-left: 1.5rem;
+  padding-left: 2rem;
   margin-top: 1rem;
 }
+
+.usp-container > li:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+
+.desktop-card-container > div:nth-child(2) > ul > li:nth-child(7),  
+.desktop-card-container > div:nth-child(3) > ul > li:nth-child(7)
+{margin-top: 0.5em;}
 
 .card-button-container {
   display: flex;
@@ -65,6 +76,7 @@ h3 {
     display: flex;
     justify-content: center;
     width: 100vw;
+
   }
 
   main {
