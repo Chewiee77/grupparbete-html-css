@@ -5,25 +5,6 @@
   font-family: "Gothic", sans-serif;
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
-textarea:focus {
-  outline: none;
-  box-shadow: inset 0px 0px 8px #1f568f;
-}
-
-input:invalid {
-  box-shadow: inset 0px 0px 8px #aa1b1b;
-}
-input:invalid:required,
-select:required {
-  box-shadow: inset 0px 0px 8px #f6be0e;
-}
-input::placeholder,
-input::-ms-value {
-  color: rgb(180, 175, 175);
-}
-
 body {
   height: 100vh;
   display: grid;
@@ -42,6 +23,25 @@ main {
 
 header {
   position: relative;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: inset 0px 0px 8px #1f568f;
+}
+
+input:invalid {
+  box-shadow: inset 0px 0px 8px #aa1b1b;
+}
+input:invalid:required,
+select:required {
+  box-shadow: inset 0px 0px 8px #f6be0e;
+}
+input::placeholder,
+input::-ms-value {
+  color: rgb(180, 175, 175);
 }
 
 /* ----------------------- CHAT ------------------ */
@@ -129,6 +129,11 @@ header {
   box-shadow: 0 2px 4px rgba(20, 19, 21, 0.1);
 }
 
+.main-header-logo img {
+  height: 5rem;
+  vertical-align: middle;
+}
+
 .main-nav-container {
   display: none;
 }
@@ -207,11 +212,6 @@ header {
   opacity: 0.2;
 }
 
-.main-header-logo img {
-  height: 5rem;
-  vertical-align: middle;
-}
-
 .main-nav-item a {
   background-color: #1f568f;
   color: white;
@@ -243,6 +243,29 @@ header {
   color: #fff;
   transform: scale(125%, 125%);
   box-shadow: 0 0 16px 2px rgba(0, 137, 84, 0.75);
+}
+
+.cta-btn,
+.landing-cta-btn {
+  animation: button-pulse 1s ease-in-out 2s 3;
+}
+
+@keyframes button-pulse {
+  0% {
+    transform: scale(100%, 100%);
+  }
+  25% {
+    transform: scale(125%, 125%);
+  }
+  50% {
+    transform: scale(100%, 100%);
+  }
+  75% {
+    transform: scale(125%, 125%);
+  }
+  0% {
+    transform: scale(100%, 100%);
+  }
 }
 
 .main-header .checkbox {
@@ -358,7 +381,7 @@ header {
   border: 1px solid #141315;
   top: 150%;
   left: 50%;
-  transform: translate(-50%);
+  transform: translateX(-50%);
   min-height: fit-content;
   max-width: 40rem;
   display: none;
@@ -446,9 +469,9 @@ header {
 }
 
 .cart-btn {
-  border: 1px solid #141315;
+  /* border: 1px solid #141315; */
   padding: 1rem;
-  box-shadow: 4px 4px 6px #141315;
+  box-shadow: 0 4px 6px rgba(20, 19, 21, 0.25);
   border-radius: 8px;
   position: relative;
 }
@@ -465,6 +488,11 @@ header {
 
 .checkout-btn {
   background-color: #008954;
+}
+
+.checkout-btn:hover,
+.continue-btn:hover {
+  box-shadow: 0 4px 6px rgba(20, 19, 21, 0.5);
 }
 
 /* ---------------------FOOTER----------------------------------- */
@@ -490,16 +518,13 @@ footer {
 }
 
 .sub-button {
+  border: none;
   background-color: #aa1b1b;
+  color: #fff;
   padding: 0.5rem;
   border-radius: 8px;
-}
-
-.sub-button > a {
   cursor: pointer;
-  padding: 1rem;
-  color: white;
-  text-decoration: none;
+  transition: all 0.4s ease-in;
 }
 
 .sub-button:hover {
@@ -513,8 +538,8 @@ footer {
 
 .socials-logo {
   display: flex;
-  filter: invert(100%) sepia(0%) saturate(100000%) hue-rotate(0deg)
-    brightness(10000%) contrast(200%);
+  filter: invert(100%) sepia(0%) saturate(100%) hue-rotate(0deg)
+    brightness(100%) contrast(100%);
   height: 30px;
 }
 
