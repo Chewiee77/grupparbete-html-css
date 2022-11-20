@@ -13,27 +13,27 @@ h3 {
   padding-top: 0.2em;
 }
 
-main {
+/* main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
+} */
 
 .flexboxcontainer {
-  min-width: 50%;
+  /* min-width: 50%; */
   display: flex;
   flex-direction: column;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  /* margin-top: 1em;
+  margin-bottom: 1em; */
   margin-left: auto;
   margin-right: auto;
   align-items: center;
   justify-content: center;
   background-color: #f7f7f7;
-  box-shadow: 4px 4px 6px #966f33;
-  border-radius: 0.5em;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  /* box-shadow: 4px 4px 6px #966f33; */
+  /* border-radius: 0.5em; */
+  /* padding-top: 1em; */
+  /* padding-bottom: 1em; */
 }
 
 .flexboxcontainer-firstsection {
@@ -50,12 +50,15 @@ main {
 }
 
 .flexboxcontainer-secondsection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #966f33;
   color: white;
   border-radius: 0.5em;
   box-shadow: 4px 4px 8px #141315;
   width: 43em;
-  text-align: center;
+  /* text-align: center; */
   padding-top: 1em;
   padding-bottom: 1em;
   margin-top: 1em;
@@ -63,24 +66,25 @@ main {
 }
 
 .inputforms {
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
   margin-top: 1em;
   display: flex;
   flex-wrap: wrap;
+  /* gap: 2em; */
   justify-content: space-between;
   width: 80%;
 }
 
 .name-input {
   height: 3em;
-  box-shadow: 0px 4px 8px #71797e7d;
+  /* box-shadow: 0px 4px 8px #71797e7d; */
   /* border-radius: 0.5em; */
   padding-left: 0.5em;
 }
 .mail--input {
   height: 3em;
-  box-shadow: 0px 4px 8px #71797e7d;
+  /* box-shadow: 0px 4px 8px #71797e7d; */
   /* border-radius: 0.5em; */
   padding-left: 0.5em;
 }
@@ -95,14 +99,18 @@ main {
   padding: 0.5em;
 }
 
-button {
+.flexboxcontainer-secondsection button {
   height: 3em;
   width: 8em;
   border: none;
   border-radius: 0.5em;
   background-color: #aa1b1b;
   color: white;
-  box-shadow: 4px 4px 8px #141315;
+  box-shadow: 0 4px 8px rgba(20, 19, 21, 0.1);
+}
+
+.flexboxcontainer-secondsection button:hover {
+  box-shadow: 0 4px 8px rgba(20, 19, 21, 0.25);
 }
 
 .flexboxcontainer-thirdsection {
@@ -116,7 +124,7 @@ button {
 }
 
 .flexboxcontainer-thirdsection > h3 {
-  padding:0.5em;
+  padding: 0.5em;
 }
 
 .flexboxcontainer-thirdsection > a > img {
@@ -151,28 +159,27 @@ button {
   }
 
   .inputforms {
+    font-size: 1em;
+    font-family: inherit;
     flex-wrap: wrap;
   }
+
   .input-form-name {
-    width:100%;
+    width: 100%;
   }
 
   .name-input {
-    font-size: 1.5em;
     margin-bottom: 0.5em;
-    width:100%;
+    width: 100%;
   }
 
   .input-form-mail {
-    width:100%;
+    width: 100%;
   }
   .mail--input {
-    font-size: 1.5em;
-    width:100%;
+    width: 100%;
   }
-  .question-input {
-    font-size: 1.5em;
-  }
+
   button {
     height: 3em;
     width: 8em;

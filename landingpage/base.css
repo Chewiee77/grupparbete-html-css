@@ -210,19 +210,34 @@ main {
 .main-nav-item a {
   background-color: #1f568f;
   color: white;
+  font-weight: 600;
   text-decoration: none;
   border-radius: 8px;
-  box-shadow: 4px 4px 6px #141315;
+  box-shadow: 4px 4px 6px rgba(20, 19, 21, 0.1);
   padding: 1rem;
   display: flex;
   justify-content: center;
   margin: auto;
+  transition: 500ms ease-in;
 }
 
-.main-nav-item *:hover {
+.main-nav-item .cta-btn {
+  background-color: #008954;
+  box-shadow: 0 0 16px 2px rgba(0, 137, 84, 0.75);
+  color: #fff;
+}
+
+.main-nav-item a:hover {
   background-color: #f6be0e;
   color: #141315;
-  transition: 500ms ease-in;
+  box-shadow: 4px 4px 6px rgba(20, 19, 21, 0.35);
+}
+
+.main-nav-item .cta-btn:hover {
+  background-color: #008954;
+  color: #fff;
+  transform: scale(125%, 125%);
+  box-shadow: 0 0 16px 2px rgba(0, 137, 84, 0.75);
 }
 
 .main-header .checkbox {
@@ -444,7 +459,7 @@ main {
 
 footer {
   grid-area: footer;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
 }
 .input-container {
   display: flex;
