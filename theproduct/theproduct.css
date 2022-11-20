@@ -1,6 +1,10 @@
 main {
-    display: flex;
-    align-items: center;
+    font-size: 18px;
+}
+
+.flexboxcontainer > :nth-child(4) {
+    width:97%;
+    border-radius: 5px;
 }
 
 .flexboxcontainer > h1 {
@@ -8,20 +12,13 @@ main {
     margin: 0.5em;
 }
 
-.flexboxcontainer > .flexboxitem > p {
-    margin-bottom: 1em;;
+.flexboxcontainer > p {
+    margin-left:1em;
+    margin-right:1em;
 }
-.flexboxcontainer > .cpu-container> .flexboxitem > p {
-    padding: 0.5em;
-}
-.flexboxcontainer > .product-container> .flexboxitem > p {
-    padding: 0.5em;
-}
-
-
 .flexboxcontainer {
     min-width: 700px;
-    max-width: 80em;
+    max-width: 60em;
     display: flex;
     flex-direction: column;
     margin-top:1em;
@@ -32,15 +29,17 @@ main {
     background-color: #f7f7f7;
     box-shadow: 0px 4px 8px #71797e7d;
     border-radius: 0.5em;
-
+    background-image: url("/img/brushed_alu.png");
+    background-size: 150%;
 }
+
 
 .flexboxcontainer > * {
     margin:1em;
 }
 
 .flexboxcontainer > div > img {
-    width:100%;
+    width:32%;
     height:100%;
     border-radius: 0.5em;
 }
@@ -61,6 +60,7 @@ main {
 
 .cpu-container p {
     margin-left: 1em;
+    padding-top:0.5em;
 }
 
 .cpu-container img {
@@ -74,34 +74,29 @@ main {
     background-color: #ffffff;
     box-shadow: 0px 1px 4px #71797e7d;
     border-radius: 0.5em;
+    padding:0.5em;
 }
 
 .product-container > div > img {
     border-radius: 0.5em 0em 0em 0.5em;
 }
-
-.productimages {
+.flexboxcontainer:last-child  > .productimages {
     display: flex;
-    width:auto;
+    width: 100%;
+    justify-content: space-around;
 }
 
 @media (max-width: 700px) {
     .cpu-container {
-      display: flex;
       flex-direction: column;
       padding-top:1em;
       width: 100%;
       border-radius: 0em;
     }
 
-    .cpu-container > .flexboxitem > p {
-        margin-right:1em;
-    }
     .cpu-container > .flexboxitem.small > img {
         margin-top: 1em;
         width: 100%;
-        height: 100%;
-        object-fit: contain;
         margin-left: auto;
         margin-right: auto;
         border-radius: 0em;
@@ -110,45 +105,19 @@ main {
     .product-container {
         display: flex;
         flex-direction: column-reverse;
-        padding-top:1em;
-        padding-left:1em;
-        padding-right:1em;
+        padding:1em 0em;
         border-radius: 0em;
         width: 100%;
+        padding-left: 1em;
+        padding-right: 1em;
     }
-    .product-container > .flexboxitem.small > img {
-        margin-top: 1em;
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-    }
-    .small {
-        object-fit: contain;
-        width: 100%;
-        height: 100%;
-    }
+
     .flexboxcontainer {
-        min-width: 95vw;
-    }
-    
-    .flexboxcontainer > * {
-        margin-top:1em;
-        margin-bottom:1em;
-        margin-left:0em;
-        margin-right:0em;
+        min-width: 94vw;
     }
 
-    .flexboxcontainer > div > img {
-        border-radius: 0em;
-    }
-
-    .flexboxitem > p {
-        margin-left:1em;
-        margin-right:1em;
-    }
-    .productimages {
-        display: block;
-        width: 100%;
+    .flexboxcontainer:last-child  > .productimages {
+        flex-direction: column;
     }
     .flexboxcontainer .small > * {
         width: 100%;
