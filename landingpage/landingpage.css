@@ -101,6 +101,7 @@ input[type="radio"] {
 .earmuff-big-pic-container {
   display: none;
   justify-content: center;
+  margin: 1rem;
 }
 .earmuff-big-pic-container img {
   max-width: 100%;
