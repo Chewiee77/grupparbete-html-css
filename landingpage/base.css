@@ -40,6 +40,10 @@ main {
   grid-area: main;
 }
 
+header {
+  position: relative;
+}
+
 /* ----------------------- CHAT ------------------ */
 
 .chat-icon {
@@ -122,6 +126,7 @@ main {
   display: flex;
   justify-content: space-between;
   z-index: 5;
+  box-shadow: 0 2px 4px rgba(20, 19, 21, 0.1);
 }
 
 .main-nav-container {
@@ -344,7 +349,7 @@ main {
   position: absolute;
   background-color: white;
   border: 1px solid #141315;
-  top: 500%;
+  top: 150%;
   left: 50%;
   transform: translate(-50%);
   min-height: fit-content;
@@ -564,5 +569,17 @@ footer {
   }
   .footer-container {
     justify-content: space-between;
+  }
+}
+
+@media (max-width: 700px) {
+  .cart-modal-container {
+    font-size: 70%;
+    justify-content: center;
+    min-width: 80%;
+  }
+
+  .order-overview-container h3 {
+    padding: 1rem 0.2rem;
   }
 }
