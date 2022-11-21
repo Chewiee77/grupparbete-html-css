@@ -351,11 +351,9 @@ input::-ms-value {
 }
 
 .cart-checkbox:checked ~ .cart-modal-container {
-  /* transform: translateX(0); */
   display: flex;
 }
 .cart-checkbox:checked ~ .backdrop-cart {
-  /* transform: translateX(0); */
   display: block;
 }
 
@@ -469,7 +467,6 @@ input::-ms-value {
 }
 
 .cart-btn {
-  /* border: 1px solid #141315; */
   padding: 1rem;
   box-shadow: 0 4px 6px rgba(20, 19, 21, 0.25);
   border-radius: 8px;
@@ -499,7 +496,6 @@ input::-ms-value {
 
 footer {
   grid-area: footer;
-  /* margin-top: 1rem; */
 }
 .input-container {
   display: flex;
