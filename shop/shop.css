@@ -70,6 +70,11 @@ h3 {
   box-shadow: 4px 4px 4px #141315;
 }
 
+.buy-btn:active {
+  background-color:#F6BE0E;
+  color:black;
+}
+
 @media (min-width: 700px) {
   .desktop-card-container {
     display: flex;
