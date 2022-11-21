@@ -74,12 +74,14 @@ h3 {
   .desktop-card-container {
     display: flex;
     justify-content: center;
-    width: 100vw;
+    max-width: 80em;
   }
 
   main {
     display: flex;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
   }
   .card-button-container {
     justify-content: space-between;
